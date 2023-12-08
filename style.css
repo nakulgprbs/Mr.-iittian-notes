@@ -42,3 +42,14 @@ footer a {
   text-decoration: none;
   margin: 0 10px;
 }
+
+@media screen and (max-width:600px) 
+{
+ h2{
+  font-size: 26px;
+  line-height: 40px;
+ } 
+ a{
+  margin: 5px;
+ }
+}
