@@ -65,7 +65,7 @@ nav ul li a.active,a:hover{
   line-height: 80px;
   margin-right: 10px;
   font-size: 30px;
-  color: white;
+  color: rgb(157, 96, 96);
   display: none;
 }
 #check{
@@ -76,9 +76,47 @@ nav ul li a.active,a:hover{
 }
 p{
   text-align: center;
+  margin-left: 10%;
   margin-top: 40px;
   text-justify: auto;
 }
+.text-center{
+  margin-left: 10%;
+}
+
+h5{
+  text-justify: auto;
+  text-align: justify;
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: center;
+}
+.about-page .image{
+  margin-bottom: 120px;
+}
+.about-page .image img{
+  align-content: baseline;
+  width: 60%;
+  margin-right: 20px;
+  margin-left: 20%;
+}
+.btn{
+  background-color: blue;
+  color: white;
+  margin-bottom: 150px;
+  width: 80px;
+  height: fit-content;
+  align-items: center;
+  margin-left: 48%;
+  
+}
+.btn a{
+  text-align: center;
+  color: white;
+  text-align: justify;
+}
+
 
 footer {
   background-color: rgb(69, 41, 247);
