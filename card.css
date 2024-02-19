@@ -46,6 +46,8 @@
 }
 .training-item button a{
   color: white;
+  text-decoration: none;
+  font-size: medium;
 }
 .training-item:hover {
   background-color: blue;

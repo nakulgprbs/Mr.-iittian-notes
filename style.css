@@ -83,6 +83,12 @@ p{
 .text-center{
   margin-left: 10%;
 }
+h1{
+  margin-left: 40px;
+}
+h3{
+  margin-left: 40px;
+}
 
 h5{
   text-justify: auto;
@@ -105,8 +111,8 @@ h5{
   background-color: blue;
   color: white;
   margin-bottom: 150px;
-  width: 80px;
-  height: fit-content;
+  width: 120px;
+  height: 40px;
   align-items: center;
   margin-left: 48%;
   
@@ -115,13 +121,14 @@ h5{
   text-align: center;
   color: white;
   text-align: justify;
+  text-decoration: none;
 }
 
 
 footer {
   background-color: rgb(69, 41, 247);
   font-size: 18px;
-  padding: 35px;
+  padding: 15px;
   text-align: center;
   position: fixed;
   right: 0;
