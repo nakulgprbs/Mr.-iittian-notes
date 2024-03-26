@@ -110,7 +110,7 @@ h5{
 .btn{
   background-color: blue;
   color: white;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   width: 120px;
   height: 40px;
   align-items: center;
@@ -123,6 +123,7 @@ h5{
   text-align: justify;
   text-decoration: none;
 }
+
 
 
 footer {
