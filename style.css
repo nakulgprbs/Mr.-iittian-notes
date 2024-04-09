@@ -215,6 +215,14 @@ footer {
       margin-top: 10px;
     
   }
+  .container{
+    width: 100%;
+    flex-direction: column;
+  }
+  .resourses{
+    margin: 10px;
+  }
+
 }
 
 
