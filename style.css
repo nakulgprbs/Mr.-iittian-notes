@@ -1,248 +1,171 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-html{
-  height: 80%;
-  box-sizing: border-box;
+
+html {
+  height: 100%;
 }
-body{
-  position: relative;
+
+body {
   margin: 0;
-  min-height: 100%;
-  padding-bottom: 0px;
-  height: 100vh;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-main{
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 32px;
+
+main {
+  flex: 1;
+  padding: 20px;
 }
-h2{
-  text-align: center;
-  text-transform: capitalize;
-}
-nav{
+
+nav {
   height: 80px;
   width: 100%;
   background-color: rgb(37, 29, 131);
-  overflow: hidden;
   position: fixed;
   top: 0;
   z-index: 1000;
-  border: 5px solid black;
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 5px solid black;
 }
-label.name{
-  
-  margin-bottom: 45%;
+
+label.name {
   font-size: 30px;
   color: white;
-  margin: 0 100px;
-  line-height: 80px;
 }
-nav ul{
-  float: right;
+
+nav ul {
+  display: flex;
   list-style-type: none;
 }
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
+
+nav ul li {
+  margin: 0 10px;
 }
-nav ul li a{
+
+nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 20px;
   text-transform: capitalize;
   padding: 8px 20px;
-  
 }
-nav ul li a.active,a:hover{
+
+nav ul li a.active,
+nav ul li a:hover {
   background-color: rgb(5, 5, 98);
 }
 
-.dropdownMmenu{
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  background-color: black;
-}
-.dropdownMmenu ul li {
-  width: 150px;
-  padding: 10px;
+#checkbtn {
+  display: none;
 }
 
-#checkbtn{
-  float: right;
-  line-height: 80px;
-  margin-right: 10px;
-  font-size: 30px;
-  color: rgb(157, 96, 96);
+#check {
   display: none;
 }
-#check{
-  display: none;
-} 
-#check:checked ~ ul{
-  left: 0;
-}
-p{
+
+p {
   text-align: center;
-  margin-left: 10%;
-  margin-top: 40px;
-  text-justify: auto;
+  margin: 20px 0;
 }
-.text-center{
-  margin-left: 10%;
-}
-h1{
-  margin-left: 40px;
-}
-h4{
-  margin-left: 40px;
-  margin-bottom: 3%;
-}
-.training-section h1{
-  margin-top: 4%;
+
+h1, h3, h4, h5 {
   text-align: center;
-  padding: 25px 0px;
-  
+  margin: 20px 0;
 }
-.container{
-  width: 1170px;
-  margin: auto;
+
+.about-page .image img {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.training-section {
+  text-align: center;
+}
+
+.container {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  display: flex;
+  gap: 20px;
 }
-.resourses{
-  flex-basis: 23%;
-  margin-bottom: 10%;
-  text-align: center;
-  padding: 20px 0px;
+
+.resources {
+  flex: 1 1 calc(33.333% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
   background: rgb(147, 134, 134);
   box-shadow: 0px 0px 10px 3px lightgrey;
-}
-.training-item h3{
-  padding: 10px 0px;
-}
-.training-item p{
-  font-size: 14px;
-  padding: 10px;
-}
-
-h3{
-  margin-left: 40px;
-}
-
-h5{
-  text-justify: auto;
-  text-align: justify;
-  margin-top: 10px;
-  margin-left: 15%;
-  margin-right: 15%;
   text-align: center;
 }
-.about-page .image{
-  margin-bottom: 120px;
-}
-.about-page .image img{
-  align-content: baseline;
-  width: 60%;
-  margin-right: 20px;
-  margin-left: 20%;
-}
-.btn{
-  background-color: blue;
-  color: white;
-  margin-bottom: 100px;
-  width: 120px;
-  height: 40px;
-  align-items: center;
-  margin-left: 48%;
-  
-}
-.btn a{
-  text-align: center;
-  color: white;
-  text-align: justify;
-  text-decoration: none;
-}
-
-
 
 footer {
   background-color: rgb(69, 41, 247);
-  height: 15%;
   font-size: 18px;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin-top: auto;
 }
-.socialIcons{
+
+.socialIcons {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
-.socialIcons a{
+
+.socialIcons a {
   text-decoration: none;
   padding: 10px;
   background-color: white;
-  margin: 10px;
   border-radius: 50%;
 }
-.socialIcons a i{
+
+.socialIcons a i {
   font-size: 2em;
   color: black;
   opacity: 0.9;
 }
 
-
-@media only screen and (min-width: 300px ) and (max-width:767px){
-  .wrapper{
-      flex-direction: column;
-  }
-  labe.logo{
-      font-size: 26px;
-      margin: 0 50px;
-  }
-  #checkbtn{
-      display: block;
-  }
-  nav ul{
-      width: 100%;
-      height: 100vh;
-      background-color: blue;
-      position: fixed;
-      top: 80px;
-      left: -100%; 
-      transition: .5s;
-  }
-  nav ul li{
-      display: block;
-      text-align: center;
-      line-height: 45px;
-      margin-top: 10px;
-    
-  }
-  .container{
-    width: 100%;
+@media (max-width: 767px) {
+  nav ul {
     flex-direction: column;
-  }
-  .resourses{
-    margin: 10px;
+    background-color: rgb(37, 29, 131);
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    transition: 0.5s;
+    height: 100vh;
+    justify-content: center;
   }
 
+  nav ul li {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  #checkbtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resources {
+    width: 90%;
+  }
 }
-
-
-
-
-
-
