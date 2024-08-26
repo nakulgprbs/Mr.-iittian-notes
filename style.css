@@ -22,46 +22,79 @@ main {
   padding: 20px;
 }
 
+/* Basic styles for navigation */
 nav {
-  height: 80px;
-  width: 100%;
-  background-color: rgb(37, 29, 131);
-  position: fixed;
-  top: 0;
-  z-index: 1000;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
-  border-bottom: 5px solid black;
-}
-
-label.name {
-  font-size: 30px;
-  color: white;
+  align-items: center;
+  background-color: #333;
+  padding: 10px;
 }
 
 nav ul {
-  display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 nav ul li {
-  margin: 0 10px;
+  position: relative;
 }
 
 nav ul li a {
-  text-decoration: none;
   color: white;
-  font-size: 20px;
-  text-transform: capitalize;
-  padding: 8px 20px;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
 }
 
-nav ul li a.active,
 nav ul li a:hover {
-  background-color: rgb(5, 5, 98);
+  background-color: #575757;
 }
+
+nav ul .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+nav ul .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+nav ul .dropdown-content a:hover {
+  background-color: #575757;
+}
+
+nav ul li:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-subcontent {
+  display: none;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  background-color: #333;
+  min-width: 160px;
+}
+
+.dropdown-submenu:hover .dropdown-subcontent {
+  display: block;
+}
+
 
 #checkbtn {
   display: none;
@@ -81,11 +114,46 @@ h1, h3, h4, h5 {
   margin: 20px 0;
 }
 
-.about-page .image img {
-  display: block;
-  width: 60%;
-  margin: 0 auto;
+/* Flexbox layout for about section */
+.about-section {
+  padding: 20px;
 }
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 60%;
+}
+
+.image-content {
+  flex: 1;
+  max-width: 35%;
+}
+
+.image-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+h5 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
 
 .training-section {
   text-align: center;
@@ -107,30 +175,35 @@ h1, h3, h4, h5 {
   text-align: center;
 }
 
+/* Footer Styling */
 footer {
-  background-color: rgb(69, 41, 247);
-  font-size: 18px;
-  padding: 20px;
-  text-align: center;
+  background-color: #9696c8; /* Dark background for footer */
+  color: #fff; /* White text color */
+  padding: 20px; /* Padding for spacing */
+  text-align: center; /* Center align text */
+  position: fixed; /* For positioning child elements */
+  margin-top: 40%;
+  width: 100%;
 }
 
 .socialIcons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+  margin-bottom: 10px; /* Space below icons */
 }
 
 .socialIcons a {
-  text-decoration: none;
-  padding: 10px;
-  background-color: white;
-  border-radius: 50%;
+  color: #fff; /* White color for icons */
+  font-size: 24px; /* Size of icons */
+  margin: 0 10px; /* Space between icons */
+  text-decoration: none; /* Remove underline from links */
 }
 
-.socialIcons a i {
-  font-size: 2em;
-  color: black;
-  opacity: 0.9;
+.socialIcons a:hover {
+  color: #ddd; /* Light color on hover */
+}
+
+footer p {
+  margin: 0; /* Remove default margin */
+  font-size: 14px; /* Font size for copyright text */
 }
 
 @media (max-width: 767px) {

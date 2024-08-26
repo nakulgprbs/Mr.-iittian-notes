@@ -1,0 +1,42 @@
+/* General Styling for Sections */
+.math-sections {
+  display: flex; /* Display sections side by side */
+  gap: 20px; /* Space between the two sections */
+  padding: 20px; /* Padding around the sections */
+}
+
+.math-section {
+  flex: 1; /* Make each section take equal width */
+  background-color: #f4f4f4; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside each section */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for a subtle lift effect */
+}
+
+.math-section h2 {
+  font-size: 24px; /* Font size for section headings */
+  margin-bottom: 10px; /* Space below the heading */
+}
+
+.math-section p {
+  font-size: 16px; /* Font size for description text */
+  margin-bottom: 15px; /* Space below the description */
+}
+
+.math-section ul {
+  list-style-type: none; /* Remove bullet points from list */
+  padding: 0; /* Remove default padding */
+}
+
+.math-section ul li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.math-section ul li a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.math-section ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
