@@ -29,7 +29,19 @@ nav {
   align-items: center;
   background-color: #333;
   padding: 10px;
+  position: fixed;
+  width: 100%;
 }
+.name {
+  font-size: 24px; /* Adjusts the font size */
+  font-weight: bold; /* Makes the text bold */
+  color: #fffbfb; /* Changes the text color */
+  margin-left: 20px; /* Adds space to the left of the label */
+  font-family: 'Arial', sans-serif; /* Sets the font family */
+  vertical-align: middle; /* Aligns the text vertically with the logo */
+  display: inline-block; /* Ensures the label stays inline with the logo */
+}
+
 
 nav ul {
   list-style-type: none;
