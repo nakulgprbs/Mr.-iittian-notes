@@ -193,8 +193,8 @@ footer {
   color: #fff; /* White text color */
   padding: 20px; /* Padding for spacing */
   text-align: center; /* Center align text */
-  position: fixed; /* For positioning child elements */
-  margin-top: 42%;
+  position: relative; /* For positioning child elements */
+
   width: 100%;
 }
 
@@ -218,17 +218,20 @@ footer p {
   font-size: 14px; /* Font size for copyright text */
 }
 
+
 @media (max-width: 767px) {
+  /* Responsive navigation */
   nav ul {
     flex-direction: column;
-    background-color: rgb(37, 29, 131);
+    background-color: #252f83;
     position: fixed;
     top: 80px;
     left: -100%;
     width: 100%;
-    transition: 0.5s;
+    transition: left 0.5s ease;
     height: 100vh;
     justify-content: center;
+    align-items: center;
   }
 
   nav ul li {
@@ -245,6 +248,19 @@ footer p {
     left: 0;
   }
 
+  /* Responsive about section */
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-content, .image-content {
+    max-width: 100%;
+    flex: none;
+  }
+
+  /* Responsive resource container */
   .container {
     flex-direction: column;
     align-items: center;
@@ -252,5 +268,11 @@ footer p {
 
   .resources {
     width: 90%;
+  }
+
+  /* Footer */
+  footer {
+    position: relative;
+    margin-top: 20px;
   }
 }
