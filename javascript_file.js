@@ -30,3 +30,25 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
     modal.style.display = "none";
 }
+
+
+<script>
+// Add event listeners to "View Playlist" buttons
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".inline-btn");
+
+  buttons.forEach((button) => {
+    button.addEventListener("mouseover", () => {
+      button.style.backgroundColor = "#0056b3"; // Highlight on hover
+    });
+
+    button.addEventListener("mouseout", () => {
+      button.style.backgroundColor = "#007BFF"; // Reset color
+    });
+
+    button.addEventListener("click", () => {
+      alert("Redirecting to playlist..."); // Log click action
+    });
+  });
+});
+
