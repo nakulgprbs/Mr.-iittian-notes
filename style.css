@@ -281,43 +281,47 @@ h3 {
 
 * courses section end*
 
-
-
-
-/* Footer Styling */
+/* Footer Container */
 footer {
-  background-color: #9696c8; /* Dark background for footer */
-  color: #fff; /* White text color */
-  padding: 20px; /* Padding for spacing */
-  text-align: center; /* Center align text */
-  position: relative; /* For positioning child elements */
-
-  width: 100%;
+  background-color: #9696c8; /* Purple background */
+  color: #fff; /* White text */
+  padding: 20px; /* Spacing around content */
+  text-align: center; /* Center-align text and icons */
+  font-family: Arial, sans-serif; /* Add fallback font */
 }
 
+/* Social Icons Container */
 .socialIcons {
-  margin-bottom: 10px; /* Space below icons */
+  margin-bottom: 15px; /* Space between icons and text */
 }
 
+/* Social Icon Links */
 .socialIcons a {
   color: #fff; /* White color for icons */
-  font-size: 24px; /* Size of icons */
-  margin: 0 10px; /* Space between icons */
-  text-decoration: none; /* Remove underline from links */
+  font-size: 24px; /* Icon size */
+  margin: 0 10px; /* Horizontal spacing */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth hover effect */
 }
 
+/* Hover Effect for Icons */
 .socialIcons a:hover {
-  color: #ddd; /* Light color on hover */
+  color: #f5f5f5; /* Lighter color on hover */
 }
 
+/* Copyright Text */
 footer p {
   margin: 0; /* Remove default margin */
-  font-size: 14px; /* Font size for copyright text */
+  font-size: 14px; /* Smaller text size */
 }
 
 
 @media (max-width: 767px) {
-  /* Responsive navigation */
+  /* Navigation */
+  nav {
+    position: relative; /* Adjust positioning to ensure nav is visible on small screens */
+  }
+
   nav ul {
     flex-direction: column;
     background-color: #252f83;
@@ -329,10 +333,10 @@ footer p {
     height: 100vh;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   nav ul li {
-    text-align: center;
     margin: 20px 0;
   }
 
@@ -345,7 +349,7 @@ footer p {
     left: 0;
   }
 
-  /* Responsive about section */
+  /* About Section */
   .about-content {
     flex-direction: column;
     align-items: center;
@@ -357,19 +361,44 @@ footer p {
     flex: none;
   }
 
-  /* Responsive resource container */
+  .image-content img {
+    width: 100%;
+    height: auto; /* Ensure image scales responsively */
+  }
+
+  /* Training Section */
   .container {
     flex-direction: column;
     align-items: center;
   }
 
   .resources {
-    width: 90%;
+    width: 90%; /* Make resources container more responsive */
+    margin-bottom: 15px;
+  }
+
+  /* Courses Section */
+  .courses .box-container {
+    grid-template-columns: 1fr; /* Stack boxes vertically on small screens */
+  }
+
+  .courses .box {
+    margin: 10px 0;
   }
 
   /* Footer */
   footer {
     position: relative;
     margin-top: 20px;
+  }
+
+  .socialIcons {
+    margin-bottom: 10px;
+  }
+
+  /* Icon adjustments */
+  .socialIcons a {
+    font-size: 20px; /* Smaller icons on mobile */
+    margin: 0 8px;
   }
 }
