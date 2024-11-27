@@ -59,15 +59,41 @@ nav ul li a:hover {
   font-size: 14px;
 }
 
+
+/* Footer Container */
 footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  background-color: #adaddd; /* Purple background */
+  color: #fff; /* White text */
+  padding: 20px; /* Spacing around content */
+  text-align: center; /* Center-align text and icons */
+  font-family: Arial, sans-serif; /* Add fallback font */
 }
+
+/* Social Icons Container */
+.socialIcons {
+  margin-bottom: 15px; /* Space between icons and text */
+}
+
+/* Social Icon Links */
+.socialIcons a {
+  color: #fff; /* White color for icons */
+  font-size: 24px; /* Icon size */
+  margin: 0 10px; /* Horizontal spacing */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Icons */
+.socialIcons a:hover {
+  color: #f5f5f5; /* Lighter color on hover */
+}
+
+/* Copyright Text */
+footer p {
+  margin: 0; /* Remove default margin */
+  font-size: 14px; /* Smaller text size */
+}
+
 
 .modal {
   display: none;
